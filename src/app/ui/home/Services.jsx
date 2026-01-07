@@ -1,10 +1,10 @@
-import DBConnect from "@/lib/DBConnect";
+import DBConnect, { collectionNameObj } from "@/lib/DBConnect";
 import Image from "next/image";
 
 export default async function Services() {
-    
+
     // Fetch services data from MongoDB
-    const serviceCollection = DBConnect(process.env.DB_COLLECTION);
+    const serviceCollection = DBConnect(collectionNameObj.servicesCollection);
     const data = await serviceCollection.find({}).toArray();
 
     return (
