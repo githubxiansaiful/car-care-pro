@@ -1,5 +1,6 @@
 import DBConnect, { collectionNameObj } from "@/lib/DBConnect";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Services() {
 
@@ -20,7 +21,7 @@ export default async function Services() {
                                 </div>
                                 <div className="service-content">
                                     <h3 className="font-bold">{service.title}</h3>
-                                    <p>Price: ${service.price}</p>
+                                    <p className="flex justify-between"><span>Price: ${service.price}</span> <span><Link href={`/services/${service._id}`}>Learn More</Link></span></p>
                                 </div>
                             </div>
                         );
