@@ -25,7 +25,7 @@ const HeroBanner = () => {
                         <div className="slide-bg">
                             <img src="/assets/images/banner/1.jpg" alt="Slide" />
                         </div>
-                        <div className="slide-content">
+                        <div className="slide-content-inner">
                             <h2>Professional Car Care You Can Trust</h2>
                             <p>From routine maintenance to advanced repairs, Car Care Pro connects you with expert mechanics to keep your vehicle running smoothly—without the hassle.</p>
                             <div className="slide-page-button">
@@ -40,7 +40,7 @@ const HeroBanner = () => {
                         <div className="slide-bg">
                             <img src="/assets/images/banner/3.jpg" alt="Slide" />
                         </div>
-                        <div className="slide-content">
+                        <div className="slide-content-inner">
                             <h2>Professional Car Care You Can Trust</h2>
                             <p>From routine maintenance to advanced repairs, Car Care Pro connects you with expert mechanics to keep your vehicle running smoothly—without the hassle.</p>
                             <div className="slide-page-button">
@@ -55,7 +55,7 @@ const HeroBanner = () => {
                         <div className="slide-bg">
                             <img src="/assets/images/banner/2.jpg" alt="Slide" />
                         </div>
-                        <div className="slide-content">
+                        <div className="slide-content-inner">
                             <h2>Professional Car Care You Can Trust</h2>
                             <p>From routine maintenance to advanced repairs, Car Care Pro connects you with expert mechanics to keep your vehicle running smoothly—without the hassle.</p>
                             <div className="slide-page-button">
