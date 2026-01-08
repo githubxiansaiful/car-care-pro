@@ -2,7 +2,7 @@
 import Image from "next/image";
 const Footer = () => {
     return (
-        <footer className="bg-[#f1f1f1] pt-[50px]">
+        <footer className="bg-[#f1f1f1] pt-12.5">
             <div className="container">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     <div className="space-y-5">
