@@ -9,9 +9,12 @@ export default async function Services() {
     const data = await serviceCollection.find({}).toArray();
 
     return (
-        <div>
+        <div className="py-16">
             <div className="container">
-                <h2>Our Services</h2>
+                <div className="section-title text-center mb-12 max-w-[650px] space-y-3 mx-auto">
+                    <h2 className="text-3xl lg:text-4xl font-bold">Our Services</h2>
+                    <p>The majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </div>
                 <div className="services-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {data.map((service) => {
                         return (
