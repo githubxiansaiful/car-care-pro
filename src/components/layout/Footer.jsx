@@ -1,5 +1,5 @@
+"use client";
 import Image from "next/image";
-
 const Footer = () => {
     return (
         <footer className="bg-[#f1f1f1] pt-[50px]">
