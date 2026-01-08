@@ -88,4 +88,25 @@
     height: 100%;
     object-fit: cover;
 }
-/* Section Title And SubTitle */
+/* Single Service */
+.single-service-banner {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+.single-service-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.6;
+    z-index: 1;
+}
