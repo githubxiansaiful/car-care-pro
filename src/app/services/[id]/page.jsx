@@ -1,7 +1,8 @@
 import DBConnect, { collectionNameObj } from "@/lib/DBConnect";
-import { File, FolderDown } from "lucide-react";
 import { ObjectId } from "mongodb";
 import Image from "next/image";
+import ServicesSidebar from "./components/ServicesSidebar";
+import ServiceBlurb from "./components/ServiceBlurb";
 
 export default async function ServiceDetails({ params }) {
     const p = await params;
@@ -15,50 +16,21 @@ export default async function ServiceDetails({ params }) {
                     <Image className="w-full h-full object-cover" src={serviceData.img} width={600} height={400} alt={serviceData.title} />
                 </div>
                 <div className="absolute z-10 p-5">
-                    <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">{serviceData.title}</h1>
+                    <h1 className="text-center font-bold text-3xl md:text-4xl lg:text-5xl">{serviceData.title}</h1>
                 </div>
             </div>
             <div className="container">
                 <div className="py-14 grid gap-5 grid-cols-12">
-                    <div className="col-span-8">
+                    <div className="col-span-12 lg:col-span-8">
                         <Image className="rounded-2xl" src={serviceData.img} width={800} height={400} alt={serviceData.title} />
                         <h2 className="font-bold text-2xl my-4">{serviceData.title}</h2>
                         <p>{serviceData.description}</p>
+                        <div className="mt-10">
+                            <ServiceBlurb></ServiceBlurb>
+                        </div>
                     </div>
-                    <div className="col-span-4 gap-5 flex flex-col">
-                        <div className="service-sidebar p-5 bg-gray-100 rounded-2xl">
-                            <div>
-                                <h3 className="font-bold text-xl mb-3">Service</h3>
-                            </div>
-                        </div>
-                        <div className="service-sidebar p-5 bg-black rounded-2xl">
-                            <div>
-                                <h3 className="text-white font-bold text-xl mb-3">Download</h3>
-                                <ul className="list gap-5">
-                                    <li className="list-row items-center px-0 py-0 text-white">
-                                        <div><File></File></div>
-                                        <div>
-                                            <div className="font-bold">Our Brochure</div>
-                                            <div className="text-xs uppercase font-semibold opacity-60">Download</div>
-                                        </div>
-                                        <button className="btn btn-square btn-ghost">
-                                            <FolderDown className="size-[1.2em]" />
-                                        </button>
-                                    </li>
-                                    <li className="list-row items-center px-0 py-0 text-white">
-                                        <div><File></File></div>
-                                        <div>
-                                            <div className="font-bold">Company Details</div>
-                                            <div className="text-xs uppercase font-semibold opacity-60">Download</div>
-                                        </div>
-                                        <button className="btn btn-square btn-ghost">
-                                            <FolderDown className="size-[1.2em]" />
-                                        </button>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
+                    <div className="col-span-12 lg:col-span-4 gap-5 flex flex-col">
+                        <ServicesSidebar></ServicesSidebar>
                     </div>
                 </div>
             </div>
