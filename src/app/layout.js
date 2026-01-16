@@ -6,7 +6,7 @@ import Footer from "@/components/layout/Footer";
 const chakraPetch = Chakra_Petch({
   variable: "--font-chakra-petch",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", 900],
 });
 
 export const metadata = {
