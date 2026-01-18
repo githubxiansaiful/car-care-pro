@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={chakraPetch.className}>
         <Navbar />
         <main>{children}</main>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
