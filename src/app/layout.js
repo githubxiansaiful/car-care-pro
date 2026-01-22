@@ -10,7 +10,7 @@ const chakraPetch = Chakra_Petch({
 });
 
 export const metadata = {
-  title: "Car Care Pro - Professional Auto Repair & Maintenance",
+  title: "Car Care Pro | Professional Auto Repair & Maintenance",
   description: "Car Care Pro provides reliable car repair, maintenance, and servicing by trusted professionals. Book quality auto services easily with transparent pricing.",
 };
 
